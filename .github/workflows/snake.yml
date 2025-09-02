@@ -19,7 +19,7 @@ jobs:
         run: mkdir -p assets
 
       - name: Generate snake SVG
-        uses: Platane/snk@v3
+        uses: Platane/snk@main
         with:
           github_user_name: eqwgeryfgbdf
           outputs: |
