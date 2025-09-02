@@ -33,7 +33,13 @@
 
 - **貢獻蛇蛇動畫**（每天更新）
 
-  ![contribution snake](assets/snake.svg)
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/snake.svg" />
+    <img alt="github contribution snake" src="assets/snake.svg" />
+  </picture>
+  
+  🎮 [彩色 GIF 版本](assets/snake.gif)
 
 ### Stats（動態卡片）
 
