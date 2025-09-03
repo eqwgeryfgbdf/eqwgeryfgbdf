@@ -2,35 +2,71 @@
   
 # 👋 Hi there! I'm Lung Yu-Cheng
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=%F0%9F%9A%80+Full+Stack+Developer;%F0%9F%8E%AF+Problem+Solver;%F0%9F%8C%9F+Passionate+Learner;%E2%9C%A8+Code+Enthusiast" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=%F0%9F%A4%96+AI+%E9%82%8A%E7%B7%A3%E9%81%8B%E7%AE%97+Developer;%F0%9F%8E%AF+Computer+Vision+Expert;%F0%9F%8C%9F+IoT+%E5%BA%94%E7%94%A8%E9%96%8B%E7%99%BC;%E2%9C%A8+Competition+Winner" alt="Typing SVG" />
 
 </div>
 
+Last updated: 2025-09-03 09:50 (Asia/Taipei)
+
 ## 🌟 About Me
-```javascript
-const developer = {
-    name: "Lung Yu-Cheng",
-    location: "Taipei, Taiwan",
-    role: "Full Stack Developer",
-    passions: ["Coding", "Innovation", "Learning", "Open Source"],
-    currentFocus: "Building scalable web applications",
-    funFact: "Love turning coffee into code ☕️"
-};
-```
+
+<table>
+<tr>
+<td>
+
+### 👨‍💻 Who I Am
+- 🏠 **Location:** Taipei, Taiwan 🇹🇼
+- 🎓 **Education:** 龍華科技大學資工系 (2022-2026)
+- 💼 **Role:** AI邊緣運算與IoT應用開發者
+- 🎯 **Focus:** 電腦視覺、物聯網、智慧系統開發
+- ☕ **Fun Fact:** 競賽獲獎達人，從綠點子發明競賽到捷運盃黑客松
+
+### 🚀 What I Do
+- 🤖 **AI/ML:** Python, OpenCV, TensorFlow, Computer Vision
+- 🔧 **Frontend:** React, HTML, CSS
+- ⚙️ **Backend:** Python, Flask, ASP.NET MVC
+- 🗄️ **Database:** SQLite, SQL
+- ☁️ **IoT/Cloud:** Arduino, Docker, Linux
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Languages:** ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white) ![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=java&logoColor=white)
+<div align="center">
 
-**Frontend:** ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white) ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+### 💻 Programming Languages
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/C/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" height="40"/>
 
-**Backend:** ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white) ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)
+### 🤖 AI & Machine Learning
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/Computer_Vision-00A86B?style=for-the-badge&logo=opencv&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/Deep_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" height="40"/>
 
-**Database:** ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+### 🎨 Frontend Development
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" height="40"/>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" height="40"/>
 
-**Tools & Cloud:** ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white) ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+### 🗄️ Database & Storage
+<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" height="40"/>
+
+### 🔧 IoT & Hardware
+<img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" height="40"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" height="40"/>
+
+</div>
 
 ---
 
@@ -50,26 +86,39 @@ const developer = {
 
 ## 🚀 Featured Projects
 
-<div align="center">
+### 🤖 手勢辨識系統 (Computer Vision)
+- **技術:** Python, OpenCV, 深度學習
+- **亮點:** 即時手勢識別、支援多種手勢模式、優化準確率
+- **應用:** 人機互動、智慧控制系統
 
-[![Project 1](https://github-readme-stats.vercel.app/api/pin/?username=eqwgeryfgbdf&repo=project-name-1&theme=tokyonight)](https://github.com/eqwgeryfgbdf/project-name-1)
-[![Project 2](https://github-readme-stats.vercel.app/api/pin/?username=eqwgeryfgbdf&repo=project-name-2&theme=tokyonight)](https://github.com/eqwgeryfgbdf/project-name-2)
+### 💰 記帳投資應用系統 (Full Stack)
+- **技術:** Python, SQLite, Flask, React
+- **亮點:** 個人收支記錄、投資組合管理、財務分析報表
+- **狀態:** 開發中
 
-</div>
+### 🌡️ 智慧監測系統 (IoT)
+- **技術:** Python, IoT, 資料分析
+- **亮點:** 即時環境監測、異常警報、數據視覺化
+- **應用:** 智慧家居、環境監控
 
-## 🌱 Currently Learning & 🎯 2024 Goals
+### ♟️ 象棋辨識系統 (Computer Vision)
+- **技術:** Python, OpenCV, 機器學習
+- **亮點:** 棋盤狀態辨識、棋子位置追蹤、棋局分析
+- **應用:** 智慧棋盤、棋局分析
 
-**Learning:** 📚 Advanced React Patterns • 🔥 Microservices Architecture • 🤖 Machine Learning Basics • ☁️ Cloud Technologies
+## 🌱 Currently Learning & 🎯 2025 Goals
 
-**Goals:** 🔨 Contribute to Open Source • 📖 Write technical blog posts • 🎓 Master new technologies • 🤝 Connect with developers
+**Learning:** 📚 深度學習進階技術 • 🔥 電腦視覺優化 • 🤖 IoT系統整合 • ☁️ 雲端部署技術
+
+**Goals:** 🔨 完成記帳投資應用系統 • 📖 發表技術論文 • 🎓 取得更多專業證照 • 🤝 參與AI/IoT相關實習
 
 ## 📈 Weekly Development Breakdown
 
 ```text
-JavaScript    ████████████████████ 40%
-Python        ████████████ 25%
-TypeScript    ████████ 20%
-Java          █████ 10%
+Python        ████████████████████ 45%
+Computer Vision ████████████ 25%
+IoT/Arduino   ████████ 15%
+Web Development █████ 10%
 Other         ██ 5%
 ```
 
@@ -85,10 +134,9 @@ Other         ██ 5%
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/yourhandle)
 [![Personal Website](https://img.shields.io/badge/-Website-000000?style=flat-square&logo=About.me&logoColor=white)](https://roylung.emelab.org/)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:lungyuchengroy@gmail.com)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/eqwgeryfgbdf)
 
 </div>
 
@@ -96,7 +144,7 @@ Other         ██ 5%
 
 <div align="center">
   
-### 💡 "Code is poetry written in logic"
+### 💡 "Turning ideas into intelligent solutions through AI and IoT"
 
 ![Profile Views](https://komarev.com/ghpvc/?username=eqwgeryfgbdf&style=flat-square&color=brightgreen)
 
