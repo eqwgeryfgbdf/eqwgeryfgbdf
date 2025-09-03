@@ -1,92 +1,123 @@
 <div align="center">
+  
+# 👋 Hi there! I'm [Your Name]
 
-# 嗨 👋
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=%F0%9F%9A%80+Full+Stack+Developer;%F0%9F%8E%AF+Problem+Solver;%F0%9F%8C%9F+Passionate+Learner;%E2%9C%A8+Code+Enthusiast" alt="Typing SVG" />
 
-讓這份 Profile 更好看、更有互動，也自動保持新鮮。
+## 🌟 About Me
 
-<a href="https://github.com/eqwgeryfgbdf?tab=followers">
-  <img alt="Followers" src="https://img.shields.io/github/followers/eqwgeryfgbdf?style=for-the-badge&logo=github" />
-</a>
-<a href="https://github.com/eqwgeryfgbdf?tab=repositories&q=&type=source&sort=stargazers">
-  <img alt="Stars" src="https://img.shields.io/github/stars/eqwgeryfgbdf?affiliations=OWNER&style=for-the-badge&logo=github" />
-</a>
+```javascript
+const developer = {
+    name: "Your Name",
+    location: "Your Location",
+    role: "Your Role",
+    passions: ["Coding", "Innovation", "Learning"],
+    currentFocus: "Building amazing projects",
+    funFact: "Your fun fact here"
+};
+```
 
 </div>
 
 ---
 
-### Live Tiles
+## 🛠️ Tech Stack
 
-> 今日一句｜台北時間｜今日靈感（自動更新）
+### Languages
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-|  |  |  |
-|---|---|---|
-| <!-- QUOTE:START -->
-載入中...（工作流程將自動更新）
-<!-- QUOTE:END --> | <!-- CLOCK:START -->
-載入中...（工作流程將自動更新）
-<!-- CLOCK:END --> | <!-- PROMPT:START -->
-載入中...（工作流程將自動更新）
-<!-- PROMPT:END --> |
+### Frontend
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### Backend
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/-Express-000000?style=for-the-badge&logo=express&logoColor=white)
+
+### Database
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Tools & Others
+![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ---
 
-### 關於我
+## 📊 GitHub Stats
 
-- 喜歡把抽象概念轉成直覺體驗，偏好極簡、清晰與可維護。
-- 偶爾會做小工具、開源腳本，或把學習筆記做成圖卡。
-- 歡迎用 Issues 留言交流，或 fork 這份樣板客製成你的版本。
-
-### 技術與工具
-
-<div align="left">
-  <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,vue,astro,nodejs,bun,express,python,go,git,github,vercel,netlify,cloudflare,figma&perline=9" alt="Tech stack" />
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=YourGitHubUsername&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YourGitHubUsername&layout=compact&langs_count=8&theme=tokyonight"/>
 </div>
 
-### Stats（動態卡片）
-
-<p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=eqwgeryfgbdf&show_icons=true&theme=transparent&hide_border=true" />
-    <img src="https://github-readme-stats.vercel.app/api?username=eqwgeryfgbdf&show_icons=true&hide_border=true" alt="GitHub Stats" />
-  </picture>
-</p>
-
-<p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=eqwgeryfgbdf&layout=compact&theme=transparent&hide_border=true" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eqwgeryfgbdf&layout=compact&hide_border=true" alt="Top Languages" />
-  </picture>
-</p>
-
-<p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=eqwgeryfgbdf&theme=transparent&hide_border=true" />
-    <img src="https://streak-stats.demolab.com?user=eqwgeryfgbdf&hide_border=true" alt="GitHub Streak" />
-  </picture>
-</p>
-
-### 小巧思與互動
-
-- 展開彩蛋
-  <details>
-    <summary>點我解鎖彩蛋 🔓</summary>
-
-    - 這份 README 是「作品操作台」，每日都有新內容（見 Live Tiles）。
-    - 若你想複製這套自動化，在 Issues 開個「我也要」我會協助設置。
-    - 深色模式下有細節小調整，試著切換主題看看差異。
-  </details>
-
-- 貢獻蛇蛇動畫（每天更新）
-
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="assets/snake.svg" />
-    <img alt="github contribution snake" src="assets/snake.svg" />
-  </picture>
-
-  🎮 <a href="assets/snake.gif">彩色 GIF 版本</a>
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YourGitHubUsername&theme=tokyonight" alt="GitHub Streak Stats"/>
+</div>
 
 ---
 
-部分內容由工作流程自動更新。對應檔案在 `/.github/workflows/`，產生器在 `/scripts/`。
+## 🚀 Featured Projects
+
+<div align="center">
+
+[![Project 1](https://github-readme-stats.vercel.app/api/pin/?username=YourGitHubUsername&repo=project-name-1&theme=tokyonight)](https://github.com/YourGitHubUsername/project-name-1)
+[![Project 2](https://github-readme-stats.vercel.app/api/pin/?username=YourGitHubUsername&repo=project-name-2&theme=tokyonight)](https://github.com/YourGitHubUsername/project-name-2)
+
+</div>
+
+---
+
+## 🌱 What I'm Learning
+
+- 📚 Advanced React Patterns
+- 🔥 Microservices Architecture
+- 🤖 Machine Learning Basics
+- ☁️ Cloud Technologies
+
+---
+
+## 📈 Activity Graph
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YourGitHubUsername&theme=tokyo-night&hide_border=true" />
+</div>
+
+---
+
+## 🎯 2024 Goals
+
+- 🔨 Contribute to Open Source projects
+- 📖 Write technical blog posts
+- 🎓 Learn new technologies
+- 🤝 Connect with fellow developers
+
+---
+
+## 📫 Let's Connect!
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourhandle)
+[![Personal Website](https://img.shields.io/badge/-Website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://yourwebsite.com)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+
+</div>
+
+---
+
+<div align="center">
+  
+### 💡 "Your inspiring quote or motto here"
+
+![Profile Views](https://komarev.com/ghpvc/?username=YourGitHubUsername&style=for-the-badge&color=brightgreen)
+
+⭐️ From [YourGitHubUsername](https://github.com/YourGitHubUsername)
+
+</div>
