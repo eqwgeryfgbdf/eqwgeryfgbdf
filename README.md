@@ -15,8 +15,7 @@ Last updated: 2025-09-03 09:50 (Asia/Taipei)
 <td>
 
 ### 👨‍💻 Who I Am
-- 🏠 **Location:** Taipei, Taiwan 🇹🇼
-- 🎓 **Education:** 龍華科技大學資工系 (2022-2026)
+- 🎓 **Education:** 龍華科技大學資訊網路工程系 (2022-2026)
 - 💼 **Role:** AI邊緣運算與IoT應用開發者
 - 🎯 **Focus:** 電腦視覺、物聯網、智慧系統開發
 - ☕ **Fun Fact:** 競賽獲獎達人，從綠點子發明競賽到捷運盃黑客松
