@@ -8,7 +8,11 @@
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack · 📊 GitHub Stats & Activity
+
+<table>
+<tr>
+<td width="55%" valign="top">
 
 <div align="center">
 
@@ -42,19 +46,20 @@
 
 </div>
 
----
-
-## 📊 GitHub Stats & Activity
+</td>
+<td width="45%" valign="top">
 
 <div align="center">
   <img height="160em" src="https://github-readme-stats.vercel.app/api?username=eqwgeryfgbdf&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
   <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eqwgeryfgbdf&layout=compact&langs_count=8&theme=tokyonight"/>
-</div>
-
-<div align="center">
+  <br/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=eqwgeryfgbdf&theme=tokyonight" alt="GitHub Streak Stats"/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=eqwgeryfgbdf&theme=tokyo-night&hide_border=true" />
 </div>
+
+</td>
+</tr>
+</table>
 
 ---
 
