@@ -6,31 +6,6 @@
 
 </div>
 
-Last updated: 2025-09-03 09:50 (Asia/Taipei)
-
-## 🌟 About Me
-
-<table>
-<tr>
-<td>
-
-### 👨‍💻 Who I Am
-- 🎓 **Education:** 龍華科技大學資訊網路工程系 (2022-2026)
-- 💼 **Role:** AI邊緣運算與IoT應用開發者
-- 🎯 **Focus:** 電腦視覺、物聯網、智慧系統開發
-- ☕ **Fun Fact:** 競賽獲獎達人，從綠點子發明競賽到捷運盃黑客松
-
-### 🚀 What I Do
-- 🤖 **AI/ML:** Python, OpenCV, TensorFlow, Computer Vision
-- 🔧 **Frontend:** React, HTML, CSS
-- ⚙️ **Backend:** Python, Flask, ASP.NET MVC
-- 🗄️ **Database:** SQLite, SQL
-- ☁️ **IoT/Cloud:** Arduino, Docker, Linux
-
-</td>
-</tr>
-</table>
-
 ---
 
 ## 🛠️ Tech Stack
@@ -82,34 +57,6 @@ Last updated: 2025-09-03 09:50 (Asia/Taipei)
 </div>
 
 ---
-
-## 🚀 Featured Projects
-
-### 🤖 手勢辨識系統 (Computer Vision)
-- **技術:** Python, OpenCV, 深度學習
-- **亮點:** 即時手勢識別、支援多種手勢模式、優化準確率
-- **應用:** 人機互動、智慧控制系統
-
-### 💰 記帳投資應用系統 (Full Stack)
-- **技術:** Python, SQLite, Flask, React
-- **亮點:** 個人收支記錄、投資組合管理、財務分析報表
-- **狀態:** 開發中
-
-### 🌡️ 智慧監測系統 (IoT)
-- **技術:** Python, IoT, 資料分析
-- **亮點:** 即時環境監測、異常警報、數據視覺化
-- **應用:** 智慧家居、環境監控
-
-### ♟️ 象棋辨識系統 (Computer Vision)
-- **技術:** Python, OpenCV, 機器學習
-- **亮點:** 棋盤狀態辨識、棋子位置追蹤、棋局分析
-- **應用:** 智慧棋盤、棋局分析
-
-## 🌱 Currently Learning & 🎯 2025 Goals
-
-**Learning:** 📚 深度學習進階技術 • 🔥 電腦視覺優化 • 🤖 IoT系統整合 • ☁️ 雲端部署技術
-
-**Goals:** 🔨 完成記帳投資應用系統 • 📖 發表技術論文 • 🎓 取得更多專業證照 • 🤝 參與AI/IoT相關實習
 
 ## 📈 Weekly Development Breakdown
 
