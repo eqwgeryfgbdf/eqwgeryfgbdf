@@ -14,7 +14,7 @@
 <tr>
 <td width="55%" valign="top">
 
-<div align="center">
+<div align="left">
 
 ### 💻 Programming Languages
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height="40"/>
