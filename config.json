@@ -1,0 +1,14 @@
+{
+  "update_config": {
+    "timezone": "Asia/Taipei",
+    "update_time": "09:00",
+    "log_dir": "daily_logs",
+    "files_to_update": [
+      "README.md"
+    ],
+    "readme_marker_start": "<!-- DAILY-UPDATE:START -->",
+    "readme_marker_end": "<!-- DAILY-UPDATE:END -->",
+    "readme_timestamp_title": "## 📅 自動更新時間"
+  },
+  "commit_message_template": "🤖 每日自動更新 - {date} {time} (Asia/Taipei)"
+}

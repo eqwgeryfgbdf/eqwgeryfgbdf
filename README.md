@@ -102,3 +102,38 @@ Other         ██ 5%
 ⭐️ From [eqwgeryfgbdf](https://github.com/eqwgeryfgbdf)
 
 </div>
+
+
+---
+
+## 📚 每日自動更新系統
+
+這個倉庫包含一個每日自動更新系統，會自動更新個人資料和履歷文件。
+
+### 🚀 快速開始
+
+- [📖 文檔首頁](docs/README.md) - 完整的文檔導航
+- [⚡ 快速開始](docs/usage/quick-start.md) - 5分鐘快速上手
+- [🛠️ 安裝指南](docs/setup/installation.md) - 系統安裝和配置
+- [🚀 部署指南](docs/setup/deployment.md) - GitHub Actions 部署
+- [🐳 YAML 部署指南](docs/setup/yaml-deployment.md) - 多種 YAML 部署方式
+
+### 📋 系統特色
+
+- ✅ **自動時間戳更新**：每日自動更新 README.md 和個人經歷文件
+- ✅ **GitHub Actions 集成**：完全自動化部署
+- ✅ **台灣時區支持**：使用 Asia/Taipei 時區
+- ✅ **智能變更檢測**：只有實際變更時才提交推送
+- ✅ **詳細日誌記錄**：生成每日更新日誌
+
+---
+
+## 更新紀錄
+- 2025-09-04：自動更新時間戳與統計資訊（Asia/Taipei 09:38）
+
+## 📅 自動更新時間
+
+<!-- DAILY-UPDATE:START -->
+最後更新：2025-09-04 10:51 (Asia/Taipei)
+<!-- DAILY-UPDATE:END -->
+

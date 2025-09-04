@@ -1,0 +1,126 @@
+name: 每日自動更新
+
+on:
+  schedule:
+    # 每天台灣時間上午 9:00 執行 (UTC 01:00)
+    - cron: '0 1 * * *'
+  workflow_dispatch: # 允許手動觸發
+    inputs:
+      custom_message:
+        description: '自定義提交信息'
+        required: false
+        default: '🤖 手動觸發每日更新'
+        type: string
+
+env:
+  TZ: Asia/Taipei
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  daily-update:
+    name: 執行每日更新
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    permissions:
+      contents: write
+      actions: read
+    
+    steps:
+      - name: 📥 檢出代碼
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: 🐍 設置 Python 環境
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+      
+      - name: 📦 安裝依賴
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: 🔍 驗證配置文件
+        run: |
+          python -c "
+          import json
+          try:
+              with open('config.json', 'r') as f:
+                  config = json.load(f)
+              print('✅ 配置文件驗證通過')
+              print(f'時區: {config[\"update_config\"][\"timezone\"]}')
+              print(f'更新時間: {config[\"update_config\"][\"update_time\"]}')
+          except Exception as e:
+              print(f'❌ 配置文件錯誤: {e}')
+              exit(1)
+          "
+      
+      - name: 🚀 執行每日更新腳本
+        run: |
+          python update_daily_info.py
+      
+      - name: 📝 檢查文件變更
+        id: verify-changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "📝 檢測到文件變更"
+            git status --porcelain
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ 沒有檢測到文件變更"
+          fi
+      
+      - name: ⚙️ 配置 Git
+        if: steps.verify-changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git config --local core.autocrlf false
+      
+      - name: 💾 提交變更
+        if: steps.verify-changes.outputs.changes == 'true'
+        run: |
+          git add .
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            COMMIT_MSG="${{ github.event.inputs.custom_message }} - $(date '+%Y-%m-%d %H:%M') (Asia/Taipei)"
+          else
+            COMMIT_MSG="🤖 每日自動更新 - $(date '+%Y-%m-%d %H:%M') (Asia/Taipei)"
+          fi
+          git commit -m "$COMMIT_MSG"
+      
+      - name: 🚀 推送變更
+        if: steps.verify-changes.outputs.changes == 'true'
+        run: |
+          git push origin main
+      
+      - name: ✅ 更新完成通知
+        if: steps.verify-changes.outputs.changes == 'true'
+        run: |
+          echo "✅ 每日更新完成並已推送至 GitHub"
+          echo "📅 更新時間: $(date '+%Y-%m-%d %H:%M:%S') (Asia/Taipei)"
+          echo "🔗 查看變更: https://github.com/${{ github.repository }}/commit/$(git rev-parse HEAD)"
+      
+      - name: ℹ️ 無變更通知
+        if: steps.verify-changes.outputs.changes == 'false'
+        run: |
+          echo "ℹ️ 今日無需更新內容"
+          echo "📅 檢查時間: $(date '+%Y-%m-%d %H:%M:%S') (Asia/Taipei)"
+      
+      - name: 📊 生成執行報告
+        if: always()
+        run: |
+          echo "## 📊 執行報告" >> $GITHUB_STEP_SUMMARY
+          echo "- **執行時間**: $(date '+%Y-%m-%d %H:%M:%S') (Asia/Taipei)" >> $GITHUB_STEP_SUMMARY
+          echo "- **觸發方式**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Python 版本**: ${{ env.PYTHON_VERSION }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **文件變更**: ${{ steps.verify-changes.outputs.changes }}" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.verify-changes.outputs.changes }}" = "true" ]; then
+            echo "- **狀態**: ✅ 更新成功" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- **狀態**: ℹ️ 無變更" >> $GITHUB_STEP_SUMMARY
+          fi
