@@ -2,24 +2,13 @@
   
 # 👋 Hi there! I'm Lung Yu-Cheng
 
-<div style="width: 100%; position: relative;">
-  <div align="left">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&pause=1000&color=36BCF7&vCenter=true&width=500&lines=Hello;%E4%BD%A0%E5%A5%BD;%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%82%8F;%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94;Bonjour;Hola;Guten+Tag;Ciao;%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82;Ol%C3%A1;%D9%85%D8%B1%D8%AD%D8%A8%D8%A7;%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87;%E0%B8%AA%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B5;Xin+ch%C3%A0o;Hej;Hallo" alt="Typing SVG" />
-  </div>
-  
-  <div align="right" style="animation-delay: 3s; opacity: 0; animation: fadeIn 0.1s 3s forwards;">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&color=36BCF7&vCenter=true&width=500&lines=English;Chinese;Japanese;Korean;French;Spanish;German;Italian;Russian;Portuguese;Arabic;Hindi;Thai;Vietnamese;Swedish;Dutch" alt="Typing SVG" />
-  </div>
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1500&color=36BCF7&center=true&vCenter=true&width=500&lines=Hello+%7C+English;%E4%BD%A0%E5%A5%BD+%7C+Chinese;%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%82%8F+%7C+Japanese;%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94+%7C+Korean;Bonjour+%7C+French;Hola+%7C+Spanish;Guten+Tag+%7C+German;Ciao+%7C+Italian;%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82+%7C+Russian;Ol%C3%A1+%7C+Portuguese;%D9%85%D8%B1%D8%AD%D8%A7+%7C+Arabic;%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87+%7C+Hindi;%E0%B8%AA%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B5+%7C+Thai;Xin+ch%C3%A0o+%7C+Vietnamese;Hej+%7C+Swedish;Hallo+%7C+Dutch" alt="Typing SVG" />
 </div>
-
-<style>
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-</style>
 
 </div>
 
+---
 
 ## 🛠️ Tech Stack · 📊 GitHub Stats & Activity
 
@@ -124,6 +113,5 @@ Other         ██ 5%
 ## 📅 自動更新時間
 
 <!-- DAILY-UPDATE:START -->
-最後更新：2025-09-04 15:21 (Asia/Taipei)
+最後更新：2025-09-05 00:13 (Asia/Taipei)
 <!-- DAILY-UPDATE:END -->
-
