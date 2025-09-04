@@ -136,36 +136,72 @@ def write_daily_log(log_dir: Path, date_str: str, timestamp: str) -> bool:
     return True
 
 
+class DailyUpdater:
+    """Object-oriented interface for the daily updater.
+
+    Exposes convenient attributes for troubleshooting docs/tests:
+      - current_time: datetime in configured timezone
+      - date_str: YYYY-MM-DD
+      - time_str: HH:MM
+    """
+
+    def __init__(self, config: Optional[Config] | None = None):
+        self.config = config or load_config()
+        self.root = ROOT
+        self._set_now()
+
+    def _set_now(self) -> None:
+        tz = self.config.update_config.timezone
+        self.current_time = now_in_tz(tz)
+        self.date_str = self.current_time.strftime("%Y-%m-%d")
+        self.time_str = self.current_time.strftime("%H:%M")
+        self.timestamp_display = f"{self.date_str} {self.time_str} ({tz})"
+
+    def refresh_time(self) -> None:
+        self._set_now()
+
+    def update_readme(self, path: Optional[Path] = None) -> bool:
+        uc = self.config.update_config
+        if path is None:
+            # Choose the first README-like file from configured list
+            candidates = [p for p in uc.files_to_update if Path(p).name.lower() == "readme.md"]
+            target = Path(candidates[0]) if candidates else Path("README.md")
+            path = (self.root / target).resolve()
+        return update_readme(
+            path,
+            timestamp=self.timestamp_display,
+            start=uc.readme_marker_start,
+            end=uc.readme_marker_end,
+            title=uc.readme_timestamp_title,
+        )
+
+    def write_daily_log(self) -> bool:
+        uc = self.config.update_config
+        log_dir = self.root / uc.log_dir
+        return write_daily_log(log_dir, self.date_str, self.timestamp_display)
+
+    def run(self) -> bool:
+        # Refresh time at run start
+        self.refresh_time()
+        uc = self.config.update_config
+        changed = False
+        for file_rel in uc.files_to_update:
+            p = (self.root / file_rel).resolve()
+            if p.name.lower() == "readme.md":
+                changed |= self.update_readme(p)
+        changed |= self.write_daily_log()
+        return changed
+
+
 def main() -> int:
-    cfg = load_config()
-    uc = cfg.update_config
-
-    now = now_in_tz(uc.timezone)
-    date_str = now.strftime("%Y-%m-%d")
-    time_str = now.strftime("%H:%M")
-    ts_display = f"{date_str} {time_str} ({uc.timezone})"
-
-    changed = False
-    for file_rel in uc.files_to_update:
-        p = (ROOT / file_rel).resolve()
-        if p.name.lower() == "readme.md":
-            changed |= update_readme(
-                p,
-                timestamp=ts_display,
-                start=uc.readme_marker_start,
-                end=uc.readme_marker_end,
-                title=uc.readme_timestamp_title,
-            )
-
-    changed |= write_daily_log(ROOT / uc.log_dir, date_str, ts_display)
-
+    updater = DailyUpdater()
+    changed = updater.run()
     if changed:
-        print(f"✅ 已更新內容於 {ts_display}")
+        print(f"✅ 已更新內容於 {updater.timestamp_display}")
     else:
-        print(f"ℹ️ 無變更需要更新（{ts_display}）")
+        print(f"ℹ️ 無變更需要更新（{updater.timestamp_display}）")
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
