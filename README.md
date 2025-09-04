@@ -2,11 +2,24 @@
   
 # 👋 Hi there! I'm Lung Yu-Cheng
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=%F0%9F%A4%96+AI+%E9%82%8A%E7%B7%A3%E9%81%8B%E7%AE%97+Developer;%F0%9F%8E%AF+Computer+Vision+Expert;%F0%9F%8C%9F+IoT+%E5%BA%94%E7%94%A8%E9%96%8B%E7%99%BC;%E2%9C%A8+Competition+Winner" alt="Typing SVG" />
+<div style="width: 100%; position: relative;">
+  <div align="left">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&pause=1000&color=36BCF7&vCenter=true&width=500&lines=Hello;%E4%BD%A0%E5%A5%BD;%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%82%8F;%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94;Bonjour;Hola;Guten+Tag;Ciao;%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82;Ol%C3%A1;%D9%85%D8%B1%D8%AD%D8%A8%D8%A7;%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87;%E0%B8%AA%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B5;Xin+ch%C3%A0o;Hej;Hallo" alt="Typing SVG" />
+  </div>
+  
+  <div align="right" style="animation-delay: 3s; opacity: 0; animation: fadeIn 0.1s 3s forwards;">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&color=36BCF7&vCenter=true&width=500&lines=English;Chinese;Japanese;Korean;French;Spanish;German;Italian;Russian;Portuguese;Arabic;Hindi;Thai;Vietnamese;Swedish;Dutch" alt="Typing SVG" />
+  </div>
+</div>
+
+<style>
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+</style>
 
 </div>
 
----
 
 ## 🛠️ Tech Stack · 📊 GitHub Stats & Activity
 
@@ -102,29 +115,6 @@ Other         ██ 5%
 ⭐️ From [eqwgeryfgbdf](https://github.com/eqwgeryfgbdf)
 
 </div>
-
-
----
-
-## 📚 每日自動更新系統
-
-這個倉庫包含一個每日自動更新系統，會自動更新個人資料和履歷文件。
-
-### 🚀 快速開始
-
-- [📖 文檔首頁](docs/README.md) - 完整的文檔導航
-- [⚡ 快速開始](docs/usage/quick-start.md) - 5分鐘快速上手
-- [🛠️ 安裝指南](docs/setup/installation.md) - 系統安裝和配置
-- [🚀 部署指南](docs/setup/deployment.md) - GitHub Actions 部署
-- [🐳 YAML 部署指南](docs/setup/yaml-deployment.md) - 多種 YAML 部署方式
-
-### 📋 系統特色
-
-- ✅ **自動時間戳更新**：每日自動更新 README.md 和個人經歷文件
-- ✅ **GitHub Actions 集成**：完全自動化部署
-- ✅ **台灣時區支持**：使用 Asia/Taipei 時區
-- ✅ **智能變更檢測**：只有實際變更時才提交推送
-- ✅ **詳細日誌記錄**：生成每日更新日誌
 
 ---
 

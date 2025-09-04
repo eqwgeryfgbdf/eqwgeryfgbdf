@@ -15,6 +15,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import random
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -111,6 +112,9 @@ def update_readme(path: Path, timestamp: str, start: str, end: str, title: str) 
     )
     replacement = rf"\1\n最後更新：{timestamp}\n\3"
     updated = pattern.sub(replacement, content)
+    
+    # 更新简短信息
+    updated = update_short_info(updated)
 
     if updated != original:
         path.write_text(updated, encoding="utf-8")
@@ -118,7 +122,7 @@ def update_readme(path: Path, timestamp: str, start: str, end: str, title: str) 
     return False
 
 
-def write_daily_log(log_dir: Path, date_str: str, timestamp: str) -> bool:
+def write_daily_log(log_dir: Path, date_str: str, timestamp: str, short_info: tuple[str, str] = None) -> bool:
     log_dir.mkdir(parents=True, exist_ok=True)
     log_file = log_dir / f"{date_str}.md"
     header = f"# 每日更新 - {date_str}\n"
@@ -175,21 +179,18 @@ class DailyUpdater:
             title=uc.readme_timestamp_title,
         )
 
-    def write_daily_log(self) -> bool:
+    def write_daily_log(self, short_info: tuple[str, str] = None) -> bool:
         uc = self.config.update_config
         log_dir = self.root / uc.log_dir
-        return write_daily_log(log_dir, self.date_str, self.timestamp_display)
+        return write_daily_log(log_dir, self.date_str, self.timestamp_display, short_info)
 
     def run(self) -> bool:
         # Refresh time at run start
         self.refresh_time()
         uc = self.config.update_config
         changed = False
-        for file_rel in uc.files_to_update:
-            p = (self.root / file_rel).resolve()
-            if p.name.lower() == "readme.md":
-                changed |= self.update_readme(p)
-        changed |= self.write_daily_log()
+        
+        changed |= self.write_daily_log(short_info)
         return changed
 
 
