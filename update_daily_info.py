@@ -216,7 +216,7 @@ class DailyUpdater:
             title=uc.readme_timestamp_title,
         )
 
-    def write_daily_log(self, short_info: tuple[str, str] = None) -> bool:
+    def write_daily_log(self, short_info: tuple[str, str] | None = None) -> bool:
         uc = self.config.update_config
         log_dir = self.root / uc.log_dir
         return write_daily_log(log_dir, self.date_str, self.timestamp_display, short_info)
@@ -226,11 +226,14 @@ class DailyUpdater:
         self.refresh_time()
         uc = self.config.update_config
         changed = False
+        
         # 產生簡短資訊並寫入日誌
         short_info = generate_short_info()
+        
         # 更新 README 與每日紀錄
         changed |= self.update_readme()
         changed |= self.write_daily_log(short_info)
+        
         return changed
 
 
