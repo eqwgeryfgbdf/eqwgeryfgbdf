@@ -99,6 +99,40 @@ def ensure_marker_block(content: str, title: str, start: str, end: str) -> str:
     return content.rstrip() + block + "\n"
 
 
+def generate_short_info() -> tuple[str, str]:
+    """Generate a short, fun info pair for daily logs.
+
+    Returns a tuple like (role, mood) that is later rendered as
+    "role | mood" in the daily log.
+    """
+    roles = [
+        "Game Developer",
+        "AI Enthusiast",
+        "Pythonista",
+        "Maker",
+        "Open Source Lover",
+    ]
+    moods = [
+        "Always curious",
+        "Keep learning",
+        "Ship small, ship often",
+        "Build > Talk",
+        "Stay positive",
+    ]
+    return random.choice(roles), random.choice(moods)
+
+
+def update_short_info(content: str) -> str:
+    """Optionally update a short-info block in README if markers exist.
+
+    This is a safe no-op unless future markers like
+    "<!-- SHORT-INFO:START -->" and "<!-- SHORT-INFO:END -->" are added.
+    """
+    # Currently no dedicated short-info markers in the repository.
+    # Return content unchanged to avoid NameError and keep behavior stable.
+    return content
+
+
 def update_readme(path: Path, timestamp: str, start: str, end: str, title: str) -> bool:
     if not path.exists():
         return False
@@ -113,7 +147,7 @@ def update_readme(path: Path, timestamp: str, start: str, end: str, title: str) 
     replacement = rf"\1\n最後更新：{timestamp}\n\3"
     updated = pattern.sub(replacement, content)
     
-    # 更新简短信息
+    # 更新簡短資訊（若未配置相關區塊則不變更）
     updated = update_short_info(updated)
 
     if updated != original:
@@ -122,7 +156,7 @@ def update_readme(path: Path, timestamp: str, start: str, end: str, title: str) 
     return False
 
 
-def write_daily_log(log_dir: Path, date_str: str, timestamp: str, short_info: tuple[str, str] = None) -> bool:
+def write_daily_log(log_dir: Path, date_str: str, timestamp: str, short_info: tuple[str, str] | None = None) -> bool:
     log_dir.mkdir(parents=True, exist_ok=True)
     log_file = log_dir / f"{date_str}.md"
     header = f"# 每日更新 - {date_str}\n"
@@ -130,6 +164,9 @@ def write_daily_log(log_dir: Path, date_str: str, timestamp: str, short_info: tu
         f"- 時間：{timestamp}\n"
         f"- 狀態：更新 README 時間戳\n"
     )
+    if short_info:
+        left, right = short_info
+        body += f"- 簡短資訊：{left} | {right}\n"
     content = header + "\n" + body
 
     if log_file.exists():
@@ -189,7 +226,10 @@ class DailyUpdater:
         self.refresh_time()
         uc = self.config.update_config
         changed = False
-        
+        # 產生簡短資訊並寫入日誌
+        short_info = generate_short_info()
+        # 更新 README 與每日紀錄
+        changed |= self.update_readme()
         changed |= self.write_daily_log(short_info)
         return changed
 
