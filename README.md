@@ -200,5 +200,5 @@ Other         ██ 5%
 ## 📅 自動更新時間
 
 <!-- DAILY-UPDATE:START -->
-最後更新：2026-06-14 13:57 (Asia/Taipei)
+最後更新：2026-06-15 14:31 (Asia/Taipei)
 <!-- DAILY-UPDATE:END -->
