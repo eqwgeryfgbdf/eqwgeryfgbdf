@@ -86,8 +86,8 @@ More: [roy.emo-lab.com](https://roy.emo-lab.com) · [CV](https://roy.emo-lab.com
 <td width="45%" valign="top">
 
 <div align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=eqwgeryfgbdf&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eqwgeryfgbdf&layout=compact&langs_count=8&theme=tokyonight"/>
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=eqwgeryfgbdf&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub statistics for Lung Yu-Cheng"/>
+  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eqwgeryfgbdf&layout=compact&langs_count=8&theme=tokyonight" alt="Most used programming languages on GitHub"/>
   <br/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=eqwgeryfgbdf&theme=tokyonight" alt="GitHub Streak Stats"/>
 </div>
