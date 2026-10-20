@@ -117,7 +117,8 @@ More: [roy.emo-lab.com](https://roy.emo-lab.com) · [CV](https://roy.emo-lab.com
 
 ### 💡 "Turning research questions into testable prototypes"
 
-![Profile Views](https://komarev.com/ghpvc/?username=eqwgeryfgbdf&style=flat-square&color=brightgreen)
+<!-- Switched profile view counters on 2026-10-20. Previous Komarev total: 570; the new counter starts fresh. -->
+![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=eqwgeryfgbdf.eqwgeryfgbdf&left_text=Profile%20views&right_color=brightgreen)
 
 ⭐️ From [eqwgeryfgbdf](https://github.com/eqwgeryfgbdf)
 
