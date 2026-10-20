@@ -65,16 +65,16 @@ More: [roy.emo-lab.com](https://roy.emo-lab.com) · [CV](https://roy.emo-lab.com
 <img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare" height="40"/>
 
 ### 🤖 AI & Machine Learning
-<img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" height="40"/>
-<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" height="40"/>
-<img src="https://img.shields.io/badge/Computer_Vision-00A86B?style=for-the-badge&logo=opencv&logoColor=white" height="40"/>
-<img src="https://img.shields.io/badge/MCP-LLM-6E40C9?style=for-the-badge" height="40"/>
+<img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" alt="YOLO" height="40"/>
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" height="40"/>
+<img src="https://img.shields.io/badge/Computer_Vision-00A86B?style=for-the-badge&logo=opencv&logoColor=white" alt="Computer Vision" height="40"/>
+<img src="https://img.shields.io/badge/MCP-LLM-6E40C9?style=for-the-badge" alt="MCP and LLM" height="40"/>
 <img src="https://img.shields.io/badge/Vibe_Coding-8B5CF6?style=for-the-badge" alt="Vibe Coding" height="40"/>
 
 ### 🔧 IoT & Hardware
-<img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" height="40"/>
-<img src="https://img.shields.io/badge/Node--RED-8F0000?style=for-the-badge&logo=nodered&logoColor=white" height="40"/>
-<img src="https://img.shields.io/badge/PCB-Signal_Integrity-00599C?style=for-the-badge" height="40"/>
+<img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32" height="40"/>
+<img src="https://img.shields.io/badge/Node--RED-8F0000?style=for-the-badge&logo=nodered&logoColor=white" alt="Node-RED" height="40"/>
+<img src="https://img.shields.io/badge/PCB-Signal_Integrity-00599C?style=for-the-badge" alt="PCB Signal Integrity" height="40"/>
 <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino" height="40"/>
 <img src="https://img.shields.io/badge/LinkIt_7697-00A1E0?style=for-the-badge" alt="LinkIt 7697" height="40"/>
 <img src="https://img.shields.io/badge/Jetson_Nano-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="Jetson Nano" height="40"/>
