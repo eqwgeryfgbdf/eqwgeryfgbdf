@@ -54,25 +54,31 @@ More: [roy.emo-lab.com](https://roy.emo-lab.com) · [CV](https://roy.emo-lab.com
 
 <div align="left">
 
-### 💻 Programming Languages
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height="40"/>
-<img src="https://img.shields.io/badge/C/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" height="40"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" height="40"/>
-<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" height="40"/>
+### 💻 Operating Systems & Platforms
+<img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge" alt="Windows" height="40"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" height="40"/>
+<img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS" height="40"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" height="40"/>
+<img src="https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white" alt="Podman" height="40"/>
+<img src="https://img.shields.io/badge/Kubernetes_(K8s)-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes (K8s)" height="40"/>
+<img src="https://img.shields.io/badge/Apple_Container-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Apple Container" height="40"/>
+<img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare" height="40"/>
 
 ### 🤖 AI & Machine Learning
 <img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" height="40"/>
 <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" height="40"/>
 <img src="https://img.shields.io/badge/Computer_Vision-00A86B?style=for-the-badge&logo=opencv&logoColor=white" height="40"/>
 <img src="https://img.shields.io/badge/MCP-LLM-6E40C9?style=for-the-badge" height="40"/>
+<img src="https://img.shields.io/badge/Vibe_Coding-8B5CF6?style=for-the-badge" alt="Vibe Coding" height="40"/>
 
 ### 🔧 IoT & Hardware
 <img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" height="40"/>
 <img src="https://img.shields.io/badge/Node--RED-8F0000?style=for-the-badge&logo=nodered&logoColor=white" height="40"/>
 <img src="https://img.shields.io/badge/PCB-Signal_Integrity-00599C?style=for-the-badge" height="40"/>
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" height="40"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" height="40"/>
-<img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" height="40"/>
+<img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino" height="40"/>
+<img src="https://img.shields.io/badge/LinkIt_7697-00A1E0?style=for-the-badge" alt="LinkIt 7697" height="40"/>
+<img src="https://img.shields.io/badge/Jetson_Nano-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="Jetson Nano" height="40"/>
+<img src="https://img.shields.io/badge/Jetson_Orin_NX-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="Jetson Orin NX" height="40"/>
 
 </div>
 
