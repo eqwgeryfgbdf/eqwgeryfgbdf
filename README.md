@@ -126,9 +126,6 @@ More: [roy.emo-lab.com](https://roy.emo-lab.com) · [CV](https://roy.emo-lab.com
 
 ---
 
-## 更新紀錄
-- 2026-09-21：帳號解封後同步個人網站資訊（roy.emo-lab.com、學經歷、精選專案與聯絡方式）
-- 2025-09-04：自動更新時間戳與統計資訊（Asia/Taipei 09:38）
 
 ## 📅 自動更新時間
 
