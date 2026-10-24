@@ -23,7 +23,7 @@ I work across computer vision, AI, and embedded systems—turning research quest
 ## About
 
 - **Master's student** in Artificial Intelligence Technology, [National Taipei University of Technology](https://www.ntut.edu.tw/)
-- **B.S.** in Computer Information and Network Engineering · IoT Technical Excellence Program, Lunghwa University of Science and Technology (2022–2024)
+- **B.S.** in Computer Information and Network Engineering · IoT Technical Excellence Program, Lunghwa University of Science and Technology (2022–2026)
 - Research focus: sign-language recognition, multimodal AI, MCP + LLM applications, and embedded interactive systems
 
 ## Featured work
