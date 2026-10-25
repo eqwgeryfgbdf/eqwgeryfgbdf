@@ -5,7 +5,7 @@
 <p align="center">
   <strong>Lung Yu-Cheng · 龍禹丞</strong><br>
   Researcher · Inventor · Engineer<br>
-  National Taipei University of Technology · EMOLab
+  National Taipei University of Technology
 </p>
 
 <p align="center">
