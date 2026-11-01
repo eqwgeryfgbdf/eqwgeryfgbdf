@@ -1,134 +1,155 @@
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=2000&color=36BCF7&center=true&vCenter=true&width=720&height=48&lines=Hi+there!+I'm+Lung+Yu-Cheng;%E4%BD%A0%E5%A5%BD%EF%BC%81%E6%88%91%E6%98%AF%E9%BE%8D%E7%A6%B9%E4%B8%9E" alt="Typing SVG" />
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile/hero-mobile-dark.png">
+  <source media="(max-width: 600px)" srcset="assets/profile/hero-mobile-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/hero-dark.png">
+  <img src="assets/profile/hero-light.png" width="1200" alt="Lung Yu-Cheng 龍禹丞 — Researcher, Inventor, Engineer. Master's student in Artificial Intelligence Technology at National Taipei University of Technology. Computer Vision, Multimodal AI, Embedded Systems.">
+</picture>
 
 <p align="center">
-  <strong>Lung Yu-Cheng · 龍禹丞</strong><br>
-  Researcher · Inventor · Engineer<br>
-  National Taipei University of Technology
+  <a href="https://roy.emo-lab.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/website-dark.png"><img src="assets/profile/website-light.png" width="120" height="40" alt="Website"></picture></a>
+  <a href="https://roy.emo-lab.com/en/cv"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/cv-dark.png"><img src="assets/profile/cv-light.png" width="80" height="40" alt="CV"></picture></a>
+  <a href="https://scholar.google.com/citations?user=DPnS2ZUAAAAJ&amp;hl=zh-TW"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/scholar-dark.png"><img src="assets/profile/scholar-light.png" width="120" height="40" alt="Google Scholar"></picture></a>
+  <a href="https://www.linkedin.com/in/yu-cheng-lung-620957381"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/linkedin-dark.png"><img src="assets/profile/linkedin-light.png" width="130" height="40" alt="LinkedIn"></picture></a>
+  <a href="mailto:lyc@mail.emo-lab.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/email-dark.png"><img src="assets/profile/email-light.png" width="105" height="40" alt="Email"></picture></a>
 </p>
 
-<p align="center">
-  <a href="https://roy.emo-lab.com"><img src="https://img.shields.io/badge/Website-roy.emo--lab.com-36BCF7?style=flat-square" alt="Website"></a>
-  <a href="mailto:lyc@mail.emo-lab.com"><img src="https://img.shields.io/badge/Email-lyc%40mail.emo--lab.com-D14836?style=flat-square" alt="Email"></a>
-  <a href="https://gitlab.com/roylung"><img src="https://img.shields.io/badge/GitLab-roylung-FC6D26?style=flat-square&logo=gitlab&logoColor=white" alt="GitLab"></a>
-  <a href="https://www.linkedin.com/in/yu-cheng-lung-620957381"><img src="https://img.shields.io/badge/LinkedIn-Yu--Cheng%20Lung-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://scholar.google.com/citations?user=DPnS2ZUAAAAJ&hl=zh-TW"><img src="https://img.shields.io/badge/Google%20Scholar-DPnS2ZUAAAAJ-4285F4?style=flat-square&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
-</p>
+<br>
 
-I work across computer vision, AI, and embedded systems—turning research questions into testable, demonstrable prototypes.
+## <img src="assets/profile/source/icons/user.svg" width="22" height="22" alt=""> &nbsp; About
+
+I work across **computer vision, AI, and embedded systems**—turning research questions into testable, demonstrable prototypes.
 
 我從電腦視覺、人工智慧與嵌入式系統出發，把研究問題做成可測試、可展示的原型。
 
-## About
+My research focuses on **sign-language recognition, multimodal AI, MCP + LLM applications, and embedded interactive systems**.
+
+<br>
+
+## <img src="assets/profile/source/icons/flask.svg" width="22" height="22" alt=""> &nbsp; Selected Work
+
+### [Real-time sign spelling and translation](https://roy.emo-lab.com/en/projects/sign-language)
+
+YOLO + skeletal recognition for real-time sign spelling and translation.<br><sub>IEEE ICCBE 2025 · Best Conference Paper</sub>
+
+### [Metro Hackathon — MCP + LLM](https://roy.emo-lab.com/en/projects/metro-mcp)
+
+MCP + LLM applications for passenger assistance services.<br><sub>2025 Taipei Metro Hackathon · Runner-up</sub>
+
+### [Factory safety pose and helmet recognition](https://roy.emo-lab.com/en/projects/factory-safety-vision)
+
+A workplace safety prototype built with OpenPose, YOLO, and CNN.
+
+### [AI smart fishing rod](https://roy.emo-lab.com/en/projects/smart-fishing-rod)
+
+ESP32 vibration sensing with ThingSpeak alerts.
+
+[Full publication list →](https://roy.emo-lab.com/en/publications)
+
+<br>
+
+## <img src="assets/profile/source/icons/graduation-cap.svg" width="25" height="22" alt=""> &nbsp; Education
+
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile/education-mobile-dark.png">
+  <source media="(max-width: 600px)" srcset="assets/profile/education-mobile-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/education-dark.png">
+  <img src="assets/profile/education-light.png" width="1200" alt="National Taipei University of Technology — Master's student in Artificial Intelligence Technology. Lunghwa University of Science and Technology — B.S. in Computer Information and Network Engineering, IoT Technical Excellence Program, 2022–2026.">
+</picture>
+
+<details>
+<summary>學歷文字版 · Education details</summary>
 
 - **Master's student** in Artificial Intelligence Technology, [National Taipei University of Technology](https://www.ntut.edu.tw/)
-- **B.S.** in Computer Information and Network Engineering · IoT Technical Excellence Program, Lunghwa University of Science and Technology (2022–2026)
-- Research focus: sign-language recognition, multimodal AI, MCP + LLM applications, and embedded interactive systems
+- **B.S.** in Computer Information and Network Engineering · IoT Technical Excellence Program, Lunghwa University of Science and Technology (**2022–2026**)
 
-## Featured work
+</details>
 
-| Project | Focus |
-| --- | --- |
-| [Real-time sign spelling and translation](https://roy.emo-lab.com/en/projects/sign-language) | YOLO + skeletal recognition; IEEE ICCBE 2025 Best Conference Paper |
-| [Metro Hackathon — MCP + LLM](https://roy.emo-lab.com/en/projects/metro-mcp) | Passenger assistance services; 2nd place, 2025 Taipei Metro Hackathon |
-| [Factory safety pose and helmet recognition](https://roy.emo-lab.com/en/projects/factory-safety-vision) | OpenPose + YOLO + CNN safety prototype |
-| [AI smart fishing rod](https://roy.emo-lab.com/en/projects/smart-fishing-rod) | ESP32 vibration sensing and ThingSpeak alerts |
+<br>
 
-More: [roy.emo-lab.com](https://roy.emo-lab.com) · [CV](https://roy.emo-lab.com/en/cv) · [Publications](https://roy.emo-lab.com/en/publications)
+## <img src="assets/profile/source/icons/star.svg" width="24" height="22" alt=""> &nbsp; Highlights
 
-## Selected recognition
+**IEEE ICCBE 2025 · Best Conference Paper**<br>Vision-based real-time sign spelling.
 
-- IEEE ICCBE 2025 Best Conference Paper — vision-based real-time sign spelling
-- WASN 2025 Honorable Mention Student Paper — multimodal sign-language translation
-- 2025 Taipei Metro Hackathon — Runner-up
-- 2025 7th Green Idea Invention and Design Fair — Titanium Prize
+**WASN 2025 · Honorable Mention Student Paper**<br>Multimodal sign-language translation.
 
----
+**2025 Taipei Metro Hackathon · Runner-up**<br>Passenger assistance with MCP + LLM.
 
-## 🛠️ Tech Stack · 📊 GitHub Stats & Activity
+**2025 7th Green Idea Invention and Design Fair · Titanium Prize**
 
-<table>
-<tr>
-<td width="55%" valign="top">
+<br>
 
-<div align="left">
+## <img src="assets/profile/source/icons/layer-group.svg" width="24" height="22" alt=""> &nbsp; Tech Stack
 
-### 💻 Operating Systems & Platforms
-<img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge" alt="Windows" height="40"/>
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" height="40"/>
-<img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS" height="40"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" height="40"/>
-<img src="https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white" alt="Podman" height="40"/>
-<img src="https://img.shields.io/badge/Kubernetes_(K8s)-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes (K8s)" height="40"/>
-<img src="https://img.shields.io/badge/Apple_Container-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Apple Container" height="40"/>
-<img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare" height="40"/>
+### Operating Systems & Platforms
 
-### 🤖 AI & Machine Learning
-<img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" alt="YOLO" height="40"/>
-<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" height="40"/>
-<img src="https://img.shields.io/badge/Computer_Vision-00A86B?style=for-the-badge&logo=opencv&logoColor=white" alt="Computer Vision" height="40"/>
-<img src="https://img.shields.io/badge/MCP-LLM-6E40C9?style=for-the-badge" alt="MCP and LLM" height="40"/>
-<img src="https://img.shields.io/badge/Vibe_Coding-8B5CF6?style=for-the-badge" alt="Vibe Coding" height="40"/>
+<p>
+<img src="https://img.shields.io/badge/Windows-edf3fb?style=flat&amp;logoColor=0071e3" alt="Windows" height="26">
+<img src="https://img.shields.io/badge/Linux-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=linux" alt="Linux" height="26">
+<img src="https://img.shields.io/badge/macOS-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=apple" alt="macOS" height="26">
+<img src="https://img.shields.io/badge/Docker-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=docker" alt="Docker" height="26">
+<img src="https://img.shields.io/badge/Podman-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=podman" alt="Podman" height="26">
+<img src="https://img.shields.io/badge/Kubernetes_(K8s)-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=kubernetes" alt="Kubernetes (K8s)" height="26">
+<img src="https://img.shields.io/badge/Apple_Container-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=apple" alt="Apple Container" height="26">
+<img src="https://img.shields.io/badge/Cloudflare-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=cloudflare" alt="Cloudflare" height="26">
+</p>
 
-### 🔧 IoT & Hardware
-<img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32" height="40"/>
-<img src="https://img.shields.io/badge/Node--RED-8F0000?style=for-the-badge&logo=nodered&logoColor=white" alt="Node-RED" height="40"/>
-<img src="https://img.shields.io/badge/PCB-Signal_Integrity-00599C?style=for-the-badge" alt="PCB Signal Integrity" height="40"/>
-<img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino" height="40"/>
-<img src="https://img.shields.io/badge/LinkIt_7697-00A1E0?style=for-the-badge" alt="LinkIt 7697" height="40"/>
-<img src="https://img.shields.io/badge/Jetson_Nano-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="Jetson Nano" height="40"/>
-<img src="https://img.shields.io/badge/Jetson_Orin_NX-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="Jetson Orin NX" height="40"/>
+### AI & Machine Learning
 
-</div>
+<p>
+<img src="https://img.shields.io/badge/YOLO-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=yolo" alt="YOLO" height="26">
+<img src="https://img.shields.io/badge/OpenCV-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=opencv" alt="OpenCV" height="26">
+<img src="https://img.shields.io/badge/Computer_Vision-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=opencv" alt="Computer Vision" height="26">
+<img src="https://img.shields.io/badge/MCP_+_LLM-edf3fb?style=flat&amp;logoColor=0071e3" alt="MCP and LLM" height="26">
+<img src="https://img.shields.io/badge/Vibe_Coding-edf3fb?style=flat&amp;logoColor=0071e3" alt="Vibe Coding" height="26">
+</p>
 
-</td>
-<td width="45%" valign="top">
+### IoT & Hardware
 
-<div align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=eqwgeryfgbdf&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub statistics for Lung Yu-Cheng"/>
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eqwgeryfgbdf&layout=compact&langs_count=8&theme=tokyonight" alt="Most used programming languages on GitHub"/>
-  <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=eqwgeryfgbdf&theme=tokyonight" alt="GitHub Streak Stats"/>
-</div>
+<p>
+<img src="https://img.shields.io/badge/ESP32-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=espressif" alt="ESP32" height="26">
+<img src="https://img.shields.io/badge/Node--RED-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=nodered" alt="Node-RED" height="26">
+<img src="https://img.shields.io/badge/PCB_Signal_Integrity-edf3fb?style=flat&amp;logoColor=0071e3" alt="PCB Signal Integrity" height="26">
+<img src="https://img.shields.io/badge/Arduino-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=arduino" alt="Arduino" height="26">
+<img src="https://img.shields.io/badge/LinkIt_7697-edf3fb?style=flat&amp;logoColor=0071e3" alt="LinkIt 7697" height="26">
+<img src="https://img.shields.io/badge/Jetson_Nano-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=nvidia" alt="Jetson Nano" height="26">
+<img src="https://img.shields.io/badge/Jetson_Orin_NX-edf3fb?style=flat&amp;logoColor=0071e3&amp;logo=nvidia" alt="Jetson Orin NX" height="26">
+</p>
 
-</td>
-</tr>
-</table>
+<br>
+
+<details>
+<summary><strong>GitHub Activity</strong></summary>
+
+[Contribution activity](https://github.com/eqwgeryfgbdf?tab=overview) · [Repositories](https://github.com/eqwgeryfgbdf?tab=repositories)
+
+</details>
+
+<br>
 
 ---
 
-## 📫 Let's Connect!
+<p align="center">
+  <strong>Turning research questions into testable prototypes.</strong><br>
+  <sub>將研究問題轉化為可測試的原型</sub>
+</p>
 
-<div align="center">
-
-[![Personal Website](https://img.shields.io/badge/-Website-000000?style=flat-square&logo=About.me&logoColor=white)](https://roy.emo-lab.com)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:lyc@mail.emo-lab.com)
-[![GitLab](https://img.shields.io/badge/-GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)](https://gitlab.com/roylung)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yu-cheng-lung-620957381)
-[![Google Scholar](https://img.shields.io/badge/-Scholar-4285F4?style=flat-square&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=DPnS2ZUAAAAJ&hl=zh-TW)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/eqwgeryfgbdf)
-
-</div>
-
----
-
-<div align="center">
-
-### 💡 "Turning research questions into testable prototypes"
+<p align="center">
+  <a href="https://roy.emo-lab.com">Website</a> ·
+  <a href="https://roy.emo-lab.com/en/publications">Publications</a> ·
+  <a href="https://gitlab.com/roylung">GitLab</a> ·
+  <a href="mailto:lyc@mail.emo-lab.com">Get in touch</a>
+</p>
 
 <!-- Switched profile view counters on 2026-10-20. Previous Komarev total: 570; the new counter starts fresh. -->
-![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=eqwgeryfgbdf.eqwgeryfgbdf&left_text=Profile%20views&right_color=brightgreen)
+<p align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=eqwgeryfgbdf.eqwgeryfgbdf&amp;left_text=Profile%20views&amp;right_color=brightgreen" alt="Profile Views">
+</p>
 
-⭐️ From [eqwgeryfgbdf](https://github.com/eqwgeryfgbdf)
-
-</div>
-
----
-
-
-## 📅 自動更新時間
+<details>
+<summary>自動更新時間</summary>
 
 <!-- DAILY-UPDATE:START -->
 最後更新：2026-09-21 18:35 (Asia/Taipei)
 <!-- DAILY-UPDATE:END -->
+
+</details>
