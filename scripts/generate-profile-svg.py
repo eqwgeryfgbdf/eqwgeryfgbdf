@@ -126,9 +126,17 @@ def floating_bubbles(root, width, height, pad, mobile, animated=True):
                 '}'
             )
         bubble = node(layer, 'g', transform=f'translate({x} {still_y:g})', **{'class': f'bubble bubble-{index} bubble-{kind}'})
+        if kind == 'stream' and animated:
+            # Independent sideways oscillation keeps each fast chain organic.
+            amplitude = (2.5 if mobile else 5) + (index % 3)
+            period = 1.35 + (index % 5) * .19
+            sway = f'bubble-sway-{index}'
+            rules.append(f'.{sway}{{animation:{sway} {period:g}s ease-in-out -{index*.27:g}s infinite alternate}}')
+            rules.append(f'@keyframes {sway}{{from{{transform:translateX(-{amplitude:g}px)}}to{{transform:translateX({amplitude:g}px)}}}}')
+            bubble = node(bubble, 'g', **{'class': f'bubble-sway {sway}'})
         node(bubble, 'circle', r=radius, fill='url(#bubble-shine)', stroke='#d7efff', stroke_opacity=.6 if kind=='stream' else .48, stroke_width=.9 if kind=='stream' else 1.35)
         node(bubble, 'circle', cx=-radius*.35, cy=-radius*.38, r=max(.7 if kind=='stream' else 1.4, radius*.12), fill='#ffffff', fill_opacity=.34)
-    rules.append('@media(prefers-reduced-motion:reduce){.bubble{animation:none!important;opacity:.4}}')
+    rules.append('@media(prefers-reduced-motion:reduce){.bubble,.bubble-sway{animation:none!important;opacity:.4}}')
     node(root, 'style').text = '\n'.join(rules)
 
 
