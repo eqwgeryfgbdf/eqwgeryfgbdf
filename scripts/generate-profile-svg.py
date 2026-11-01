@@ -73,20 +73,39 @@ def floating_bubbles(root, width, height, pad, mobile, animated=True):
     clip = node(defs, 'clipPath', id='bubble-clip')
     node(clip, 'rect', x=pad, y=pad, width=width-2*pad, height=height-2*pad, rx=26 if mobile else 30)
     shine = node(defs, 'radialGradient', id='bubble-shine', cx='28%', cy='24%', r='76%')
-    for offset, opacity in [('0%', .20), ('45%', .055), ('78%', .025), ('100%', .11)]:
+    for offset, opacity in [('0%', .32), ('45%', .10), ('78%', .045), ('100%', .18)]:
         node(shine, 'stop', offset=offset, stop_color='#e6f5ff', stop_opacity=opacity)
+    # Keep the stronger motion in the free space around the fixed text. This
+    # stationary mask softens bubbles as they pass through the reading area.
+    visibility = node(defs, 'linearGradient', id='bubble-visibility', x1='0%', y1='0%', x2='0%' if mobile else '100%', y2='100%' if mobile else '0%')
+    stops = ([('0%', 1), ('31%', 1), ('39%', .18), ('90%', .18), ('99%', 1), ('100%', 1)]
+             if mobile else [('0%', 1), ('22%', 1), ('25%', .18), ('72%', .18), ('78%', 1), ('100%', 1)])
+    for offset, opacity in stops:
+        node(visibility, 'stop', offset=offset, stop_color='#ffffff', stop_opacity=opacity)
+    readability = node(defs, 'mask', id='bubble-readability', maskUnits='userSpaceOnUse', x=0, y=0, width=width, height=height)
+    node(readability, 'rect', width=width, height=height, fill='url(#bubble-visibility)')
+    if mobile:
+        edges = node(defs, 'linearGradient', id='bubble-edge-visibility')
+        for offset, opacity in [('0%', 1), ('5%', 1), ('15%', 0), ('85%', 0), ('95%', 1), ('100%', 1)]:
+            node(edges, 'stop', offset=offset, stop_color='#ffffff', stop_opacity=opacity)
+        node(readability, 'rect', width=width, height=height, fill='url(#bubble-edge-visibility)')
     # x, radius, duration, negative delay, horizontal drift. Fixed values make
     # generation reproducible and keep loops out of phase without JavaScript.
     bubbles = (
-        [(36, 13, 23, 4, 9), (84, 24, 29, 19, -12), (134, 9, 25, 8, 10),
-         (240, 12, 26, 17, -9), (303, 25, 31, 12, 12), (351, 16, 24, 21, -10)]
+        [(22, 10, 13, 3, 8), (48, 19, 16, 10, -10), (88, 27, 18, 14, -13),
+         (120, 12, 14, 5, 10), (150, 9, 12, 8, -8), (200, 11, 15, 11, 9),
+         (239, 15, 17, 3, -11), (282, 24, 18, 9, 12), (320, 30, 17, 13, -14),
+         (346, 14, 13, 5, 10), (365, 18, 15, 8, -9), (62, 10, 12, 1, 11)]
         if mobile else
-        [(46, 14, 24, 5, 10), (244, 26, 30, 19, -13), (430, 12, 25, 3, 12),
-         (650, 20, 29, 13, -12), (842, 14, 23, 7, 10), (946, 42, 32, 16, -16),
-         (1055, 26, 28, 24, 15), (1144, 18, 24, 10, -13), (1010, 10, 22, 4, 8)]
+        [(32, 12, 12, 2, 10), (82, 22, 15, 9, -12), (205, 12, 13, 3, 8),
+         (244, 30, 18, 12, -16), (310, 14, 14, 5, 10), (420, 17, 16, 14, 12),
+         (535, 10, 12, 7, -10), (650, 24, 17, 4, -16), (780, 12, 13, 9, 13),
+         (866, 18, 15, 11, 10), (912, 34, 18, 8, -15), (962, 13, 12, 3, 9),
+         (1005, 44, 18, 14, 18), (1050, 22, 14, 6, -12), (1090, 12, 12, 10, 10),
+         (1125, 32, 17, 3, -16), (1164, 18, 13, 7, -11), (984, 9, 12, 6, 14)]
     )
     rules = ['.bubble{opacity:.55;pointer-events:none}']
-    layer = node(root, 'g', id='floating-bubbles', clip_path='url(#bubble-clip)', aria_hidden='true')
+    layer = node(root, 'g', id='floating-bubbles', clip_path='url(#bubble-clip)', mask='url(#bubble-readability)', aria_hidden='true')
     for index, (x, radius, duration, delay, drift) in enumerate(bubbles):
         bottom, top = height + radius + 4, -radius - 4
         still_y = bottom + (top-bottom) * delay/duration
@@ -103,8 +122,8 @@ def floating_bubbles(root, width, height, pad, mobile, animated=True):
                 '}'
             )
         bubble = node(layer, 'g', transform=f'translate({x} {still_y:g})', **{'class': f'bubble bubble-{index}'})
-        node(bubble, 'circle', r=radius, fill='url(#bubble-shine)', stroke='#d7efff', stroke_opacity=.28, stroke_width=1.1)
-        node(bubble, 'circle', cx=-radius*.35, cy=-radius*.38, r=max(1.4, radius*.12), fill='#ffffff', fill_opacity=.22)
+        node(bubble, 'circle', r=radius, fill='url(#bubble-shine)', stroke='#d7efff', stroke_opacity=.48, stroke_width=1.35)
+        node(bubble, 'circle', cx=-radius*.35, cy=-radius*.38, r=max(1.4, radius*.12), fill='#ffffff', fill_opacity=.34)
     rules.append('@media(prefers-reduced-motion:reduce){.bubble{animation:none!important;opacity:.4}}')
     node(root, 'style').text = '\n'.join(rules)
 
