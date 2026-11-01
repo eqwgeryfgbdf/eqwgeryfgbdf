@@ -89,8 +89,9 @@ def floating_bubbles(root, width, height, pad, mobile, animated=True):
         for offset, opacity in [('0%', 1), ('5%', 1), ('15%', 0), ('85%', 0), ('95%', 1), ('100%', 1)]:
             node(edges, 'stop', offset=offset, stop_color='#ffffff', stop_opacity=opacity)
         node(readability, 'rect', width=width, height=height, fill='url(#bubble-edge-visibility)')
-    # Large bubbles drift independently; small ones share a narrow lane and
-    # speed, with 0.38-second spacing so each group rises as a coherent chain.
+    # Uneven launch phases create close pairs, overlaps, and wider gaps.
+    # Slight speed differences let the spacing evolve as the bubbles rise.
+    # Fixed patterns keep regeneration deterministic without SVG scripting.
     # Tuple: x, radius, duration, negative delay, horizontal drift, kind.
     large = (
         [(82, 27, 26, 20, -13), (142, 20, 22, 10, 10),
@@ -104,10 +105,15 @@ def floating_bubbles(root, width, height, pad, mobile, animated=True):
     bubbles = [(*item, 'large') for item in large]
     lanes = ([(19, 4.8, .6, 3), (371, 5.4, 2.8, -3)] if mobile else
              [(34, 4.4, .6, 3), (978, 4.8, 2.1, -3), (1152, 5.2, 3.4, 3)])
-    for x, duration, phase, drift in lanes:
+    spacing = [(0, .07, .64, 1.38, 1.47, 2.36),
+               (0, .52, .60, 1.62, 1.68, 2.42),
+               (0, .09, .92, 1.04, 1.83, 2.54)]
+    speed_variation = [.97, 1.02, .99, 1.04, .98, 1.01]
+    for lane_index, (x, duration, phase, drift) in enumerate(lanes):
         for index, (radius, offset) in enumerate([(5, 0), (7, 2), (4, -1), (8, 1), (5.5, -2), (6.5, 0)]):
-            delay = round((phase + index*.38) % duration, 2)
-            bubbles.append((x+offset, radius, duration, delay, drift, 'stream'))
+            bubble_duration = round(duration * speed_variation[(index+lane_index) % 6], 2)
+            delay = round((phase + spacing[lane_index][index]) % bubble_duration, 2)
+            bubbles.append((x+offset, radius, bubble_duration, delay, drift, 'stream'))
     rules = ['.bubble{opacity:.55;pointer-events:none}']
     layer = node(root, 'g', id='floating-bubbles', clip_path='url(#bubble-clip)', mask='url(#bubble-readability)', aria_hidden='true')
     for index, (x, radius, duration, delay, drift, kind) in enumerate(bubbles):
