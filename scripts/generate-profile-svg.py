@@ -89,24 +89,28 @@ def floating_bubbles(root, width, height, pad, mobile, animated=True):
         for offset, opacity in [('0%', 1), ('5%', 1), ('15%', 0), ('85%', 0), ('95%', 1), ('100%', 1)]:
             node(edges, 'stop', offset=offset, stop_color='#ffffff', stop_opacity=opacity)
         node(readability, 'rect', width=width, height=height, fill='url(#bubble-edge-visibility)')
-    # x, radius, duration, negative delay, horizontal drift. Fixed values make
-    # generation reproducible and keep loops out of phase without JavaScript.
-    bubbles = (
-        [(22, 10, 13, 3, 8), (48, 19, 16, 10, -10), (88, 27, 18, 14, -13),
-         (120, 12, 14, 5, 10), (150, 9, 12, 8, -8), (200, 11, 15, 11, 9),
-         (239, 15, 17, 3, -11), (282, 24, 18, 9, 12), (320, 30, 17, 13, -14),
-         (346, 14, 13, 5, 10), (365, 18, 15, 8, -9), (62, 10, 12, 1, 11)]
+    # Large bubbles drift independently; small ones share a narrow lane and
+    # speed, with 0.38-second spacing so each group rises as a coherent chain.
+    # Tuple: x, radius, duration, negative delay, horizontal drift, kind.
+    large = (
+        [(82, 27, 26, 20, -13), (142, 20, 22, 10, 10),
+         (282, 24, 24, 13, 12), (320, 30, 28, 22, -14)]
         if mobile else
-        [(32, 12, 12, 2, 10), (82, 22, 15, 9, -12), (205, 12, 13, 3, 8),
-         (244, 30, 18, 12, -16), (310, 14, 14, 5, 10), (420, 17, 16, 14, 12),
-         (535, 10, 12, 7, -10), (650, 24, 17, 4, -16), (780, 12, 13, 9, 13),
-         (866, 18, 15, 11, 10), (912, 34, 18, 8, -15), (962, 13, 12, 3, 9),
-         (1005, 44, 18, 14, 18), (1050, 22, 14, 6, -12), (1090, 12, 12, 10, 10),
-         (1125, 32, 17, 3, -16), (1164, 18, 13, 7, -11), (984, 9, 12, 6, 14)]
+        [(82, 22, 22, 14, -12), (244, 30, 26, 17, -16),
+         (650, 24, 23, 6, -16), (866, 22, 22, 12, 10),
+         (912, 34, 27, 11, -15), (1005, 44, 30, 22, 18),
+         (1050, 24, 24, 10, -12), (1125, 32, 28, 6, -16)]
     )
+    bubbles = [(*item, 'large') for item in large]
+    lanes = ([(19, 4.8, .6, 3), (371, 5.4, 2.8, -3)] if mobile else
+             [(34, 4.4, .6, 3), (978, 4.8, 2.1, -3), (1152, 5.2, 3.4, 3)])
+    for x, duration, phase, drift in lanes:
+        for index, (radius, offset) in enumerate([(5, 0), (7, 2), (4, -1), (8, 1), (5.5, -2), (6.5, 0)]):
+            delay = round((phase + index*.38) % duration, 2)
+            bubbles.append((x+offset, radius, duration, delay, drift, 'stream'))
     rules = ['.bubble{opacity:.55;pointer-events:none}']
     layer = node(root, 'g', id='floating-bubbles', clip_path='url(#bubble-clip)', mask='url(#bubble-readability)', aria_hidden='true')
-    for index, (x, radius, duration, delay, drift) in enumerate(bubbles):
+    for index, (x, radius, duration, delay, drift, kind) in enumerate(bubbles):
         bottom, top = height + radius + 4, -radius - 4
         still_y = bottom + (top-bottom) * delay/duration
         name = f'bubble-rise-{index}'
@@ -121,9 +125,9 @@ def floating_bubbles(root, width, height, pad, mobile, animated=True):
                 f'100%{{transform:translate({x+drift*.3:g}px,{top}px);opacity:0}}'
                 '}'
             )
-        bubble = node(layer, 'g', transform=f'translate({x} {still_y:g})', **{'class': f'bubble bubble-{index}'})
-        node(bubble, 'circle', r=radius, fill='url(#bubble-shine)', stroke='#d7efff', stroke_opacity=.48, stroke_width=1.35)
-        node(bubble, 'circle', cx=-radius*.35, cy=-radius*.38, r=max(1.4, radius*.12), fill='#ffffff', fill_opacity=.34)
+        bubble = node(layer, 'g', transform=f'translate({x} {still_y:g})', **{'class': f'bubble bubble-{index} bubble-{kind}'})
+        node(bubble, 'circle', r=radius, fill='url(#bubble-shine)', stroke='#d7efff', stroke_opacity=.6 if kind=='stream' else .48, stroke_width=.9 if kind=='stream' else 1.35)
+        node(bubble, 'circle', cx=-radius*.35, cy=-radius*.38, r=max(.7 if kind=='stream' else 1.4, radius*.12), fill='#ffffff', fill_opacity=.34)
     rules.append('@media(prefers-reduced-motion:reduce){.bubble{animation:none!important;opacity:.4}}')
     node(root, 'style').text = '\n'.join(rules)
 
