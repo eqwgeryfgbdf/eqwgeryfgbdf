@@ -1,16 +1,16 @@
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile/hero-mobile-dark.png">
-  <source media="(max-width: 600px)" srcset="assets/profile/hero-mobile-light.png">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/hero-dark.png">
-  <img src="assets/profile/hero-light.png" width="1200" alt="Lung Yu-Cheng 龍禹丞 — Researcher, Inventor, Engineer. Master's student in Artificial Intelligence Technology at National Taipei University of Technology. Computer Vision, Multimodal AI, Embedded Systems.">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile/hero-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/profile/hero-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/hero-dark.svg">
+  <img src="assets/profile/hero-light.svg" width="1200" alt="Lung Yu-Cheng 龍禹丞 — Researcher, Inventor, Engineer. Master's student in Artificial Intelligence Technology at National Taipei University of Technology. Computer Vision, Multimodal AI, Embedded Systems.">
 </picture>
 
 <p align="center">
-  <a href="https://roy.emo-lab.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/website-dark.png"><img src="assets/profile/website-light.png" width="120" height="40" alt="Website"></picture></a>
-  <a href="https://roy.emo-lab.com/en/cv"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/cv-dark.png"><img src="assets/profile/cv-light.png" width="80" height="40" alt="CV"></picture></a>
-  <a href="https://scholar.google.com/citations?user=DPnS2ZUAAAAJ&amp;hl=zh-TW"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/scholar-dark.png"><img src="assets/profile/scholar-light.png" width="120" height="40" alt="Google Scholar"></picture></a>
-  <a href="https://www.linkedin.com/in/yu-cheng-lung-620957381"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/linkedin-dark.png"><img src="assets/profile/linkedin-light.png" width="130" height="40" alt="LinkedIn"></picture></a>
-  <a href="mailto:lyc@mail.emo-lab.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/email-dark.png"><img src="assets/profile/email-light.png" width="105" height="40" alt="Email"></picture></a>
+  <a href="https://roy.emo-lab.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/website-dark.svg"><img src="assets/profile/website-light.svg" width="120" height="40" alt="Website"></picture></a>
+  <a href="https://roy.emo-lab.com/en/cv"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/cv-dark.svg"><img src="assets/profile/cv-light.svg" width="80" height="40" alt="CV"></picture></a>
+  <a href="https://scholar.google.com/citations?user=DPnS2ZUAAAAJ&amp;hl=zh-TW"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/scholar-dark.svg"><img src="assets/profile/scholar-light.svg" width="120" height="40" alt="Google Scholar"></picture></a>
+  <a href="https://www.linkedin.com/in/yu-cheng-lung-620957381"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/linkedin-dark.svg"><img src="assets/profile/linkedin-light.svg" width="130" height="40" alt="LinkedIn"></picture></a>
+  <a href="mailto:lyc@mail.emo-lab.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/email-dark.svg"><img src="assets/profile/email-light.svg" width="105" height="40" alt="Email"></picture></a>
 </p>
 
 <br>
@@ -50,10 +50,10 @@ ESP32 vibration sensing with ThingSpeak alerts.
 ## <img src="assets/profile/source/icons/graduation-cap.svg" width="25" height="22" alt=""> &nbsp; Education
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile/education-mobile-dark.png">
-  <source media="(max-width: 600px)" srcset="assets/profile/education-mobile-light.png">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/education-dark.png">
-  <img src="assets/profile/education-light.png" width="1200" alt="National Taipei University of Technology — Master's student in Artificial Intelligence Technology. Lunghwa University of Science and Technology — B.S. in Computer Information and Network Engineering, IoT Technical Excellence Program, 2022–2026.">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile/education-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/profile/education-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/education-dark.svg">
+  <img src="assets/profile/education-light.svg" width="1200" alt="National Taipei University of Technology — Master's student in Artificial Intelligence Technology. Lunghwa University of Science and Technology — B.S. in Computer Information and Network Engineering, IoT Technical Excellence Program, 2022–2026.">
 </picture>
 
 <details>
