@@ -1,4 +1,8 @@
 <picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile/hero-still-mobile-dark.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/profile/hero-still-mobile-light.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/profile/hero-still-dark.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile/hero-still-light.svg">
   <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile/hero-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/profile/hero-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/profile/hero-dark.svg">

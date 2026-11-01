@@ -67,11 +67,54 @@ def school_mark(parent, name, cx, cy, radius, palette):
     parent.append(source)
 
 
-def hero(palette, mobile=False):
+def floating_bubbles(root, width, height, pad, mobile, animated=True):
+    """Decorative CSS-only animation; clipped behind the fixed profile content."""
+    defs = node(root, 'defs')
+    clip = node(defs, 'clipPath', id='bubble-clip')
+    node(clip, 'rect', x=pad, y=pad, width=width-2*pad, height=height-2*pad, rx=26 if mobile else 30)
+    shine = node(defs, 'radialGradient', id='bubble-shine', cx='28%', cy='24%', r='76%')
+    for offset, opacity in [('0%', .20), ('45%', .055), ('78%', .025), ('100%', .11)]:
+        node(shine, 'stop', offset=offset, stop_color='#e6f5ff', stop_opacity=opacity)
+    # x, radius, duration, negative delay, horizontal drift. Fixed values make
+    # generation reproducible and keep loops out of phase without JavaScript.
+    bubbles = (
+        [(36, 13, 23, 4, 9), (84, 24, 29, 19, -12), (134, 9, 25, 8, 10),
+         (240, 12, 26, 17, -9), (303, 25, 31, 12, 12), (351, 16, 24, 21, -10)]
+        if mobile else
+        [(46, 14, 24, 5, 10), (244, 26, 30, 19, -13), (430, 12, 25, 3, 12),
+         (650, 20, 29, 13, -12), (842, 14, 23, 7, 10), (946, 42, 32, 16, -16),
+         (1055, 26, 28, 24, 15), (1144, 18, 24, 10, -13), (1010, 10, 22, 4, 8)]
+    )
+    rules = ['.bubble{opacity:.55;pointer-events:none}']
+    layer = node(root, 'g', id='floating-bubbles', clip_path='url(#bubble-clip)', aria_hidden='true')
+    for index, (x, radius, duration, delay, drift) in enumerate(bubbles):
+        bottom, top = height + radius + 4, -radius - 4
+        still_y = bottom + (top-bottom) * delay/duration
+        name = f'bubble-rise-{index}'
+        if animated:
+            rules.append(f'.bubble-{index}{{animation:{name} {duration}s linear -{delay}s infinite}}')
+            rules.append(
+                f'@keyframes {name}{{'
+                f'0%{{transform:translate({x}px,{bottom}px);opacity:0}}'
+                '10%{opacity:.8}'
+                f'50%{{transform:translate({x+drift}px,{height/2:g}px);opacity:1}}'
+                '90%{opacity:.8}'
+                f'100%{{transform:translate({x+drift*.3:g}px,{top}px);opacity:0}}'
+                '}'
+            )
+        bubble = node(layer, 'g', transform=f'translate({x} {still_y:g})', **{'class': f'bubble bubble-{index}'})
+        node(bubble, 'circle', r=radius, fill='url(#bubble-shine)', stroke='#d7efff', stroke_opacity=.28, stroke_width=1.1)
+        node(bubble, 'circle', cx=-radius*.35, cy=-radius*.38, r=max(1.4, radius*.12), fill='#ffffff', fill_opacity=.22)
+    rules.append('@media(prefers-reduced-motion:reduce){.bubble{animation:none!important;opacity:.4}}')
+    node(root, 'style').text = '\n'.join(rules)
+
+
+def hero(palette, mobile=False, animated=True):
     width, height = (390, 422) if mobile else (1200, 320)
     root = canvas(width, height, 'Lung Yu-Cheng · 龍禹丞', "Researcher, Inventor, Engineer. Master's student in Artificial Intelligence Technology at National Taipei University of Technology.", palette)
     pad = 5 if mobile else 8
     node(root, 'rect', x=pad, y=pad, width=width-2*pad, height=height-2*pad, rx=26 if mobile else 30, fill='#0062d6')
+    floating_bubbles(root, width, height, pad, mobile, animated)
     cx, cy, radius = (195, 85, 54.5) if mobile else (153, 160, 90.5)
     clip = node(node(root, 'defs'), 'clipPath', id='portrait-clip')
     node(clip, 'circle', cx=cx, cy=cy, r=radius)
@@ -144,6 +187,10 @@ def main():
                 filename = f'{name}{"-mobile" if mobile else ""}-{theme}.svg'
                 ET.ElementTree(render(palette, mobile)).write(OUT / filename, encoding='utf-8', xml_declaration=True)
                 written.append(filename)
+                if name == 'hero':
+                    filename = f'hero-still{"-mobile" if mobile else ""}-{theme}.svg'
+                    ET.ElementTree(hero(palette, mobile, animated=False)).write(OUT / filename, encoding='utf-8', xml_declaration=True)
+                    written.append(filename)
         for name in BUTTONS:
             filename = f'{name}-{theme}.svg'
             ET.ElementTree(button(name, palette, theme=='dark')).write(OUT / filename, encoding='utf-8', xml_declaration=True)
